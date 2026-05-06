@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Your Name</title>
+    <meta name="description" content="WDD 231 Course Home Page for Your Name. Web Frontend Development I assignment portal with course list and project links.">
+    <meta name="author" content="Your Name">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="44" height="44">
+        <span>Your Name</span>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+    </header>
+    
+    <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+    
+    <main>
+        <h1>Home</h1>
+        
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Your Name and I am studying Web and Computer Programming at BYU-Idaho. I enjoy building responsive, accessible websites and learning modern JavaScript. This course portal demonstrates my progress through the Web Frontend Development certificate.</p>
+        </section>
+        
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Your Name" width="200" height="250" loading="lazy">
+        </section>
+        
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courseList"></div>
+            <p id="totalCredits"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social">
+            <a href="https://github.com/yourusername" target="_blank"><img src="images/github.svg" alt="GitHub" width="44" height="44"></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44"></a>
+            <a href="https://x.com/yourprofile" target="_blank"><img src="images/x.svg" alt="X" width="44" height="44"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Your Name | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
