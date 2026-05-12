@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuja Chamber of Commerce Directory - Onos Adu</title>
+    <meta name="description" content="Business directory for the Abuja Chamber of Commerce. Find local member businesses, services, and contact information.">
+    <meta name="author" content="Onos Adu">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Abuja Chamber of Commerce Directory">
+    <meta property="og:description" content="Business directory for the Abuja Chamber of Commerce. Find local member businesses and services.">
+    <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Abuja Chamber of Commerce Logo" width="50" height="50">
+        <span>Abuja Chamber of Commerce</span>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+    </header>
+    
+    <nav class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Chamber</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+    
+    <main>
+        <h1>Business Directory</h1>
+        
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+        
+        <article id="members" class="grid"></article>
+    </main>
+    
+    <footer>
+        <div class="contact">
+            <p><strong>Abuja Chamber of Commerce</strong></p>
+            <p>10 Central Business District</p>
+            <p>Abuja, Nigeria</p>
+            <p>info@abujachamber.ng</p>
+            <p>+234 800 000 0000</p>
+        </div>
+        <div class="dev-info">
+            <p>&copy;<span id="currentyear"></span> Abuja Chamber of Commerce</p>
+            <p>Onos Adu | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

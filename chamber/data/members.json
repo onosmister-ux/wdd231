@@ -1,0 +1,65 @@
+[
+  {
+    "name": "IDWeb",
+    "address": "2115 S Vista Avenue, Boise ID 83705",
+    "phone": "(208) 342-9386",
+    "website": "https://idahowebsites.com/",
+    "image": "images/members/idweb.webp",
+    "membership": 3,
+    "description": "Custom web design and development"
+  },
+  {
+    "name": "Surge Web Design",
+    "address": "4072 E Arch Drive, Meridian ID 83646",
+    "phone": "(208) 631-0640",
+    "website": "https://www.surgewebdesign.com/",
+    "image": "images/members/surge.webp",
+    "membership": 2,
+    "description": "Digital marketing and web solutions"
+  },
+  {
+    "name": "Graphic Zen",
+    "address": "1788 E Summerplace Court, Meridian ID 83646",
+    "phone": "(208) 631-4984",
+    "website": "https://graphiczen.com/",
+    "image": "images/members/graphiczen.webp",
+    "membership": 1,
+    "description": "Graphic design and branding"
+  },
+  {
+    "name": "Peppershock Media",
+    "address": "1215 3rd Street, Nampa ID 83651",
+    "phone": "(208) 461-5070",
+    "website": "https://www.peppershock.com/",
+    "image": "images/members/peppershock.webp",
+    "membership": 3,
+    "description": "Video production and marketing"
+  },
+  {
+    "name": "Flash Tech Services",
+    "address": "Star Idaho 83669",
+    "phone": "(208) 488-5810",
+    "website": "https://flashtechnicalservices.com/",
+    "image": "images/members/flashtech.webp",
+    "membership": 2,
+    "description": "IT support and consulting"
+  },
+  {
+    "name": "Metro Express Car Wash",
+    "address": "1725 E Overland Road, Meridian ID 83642",
+    "phone": "(208) 888-4073",
+    "website": "https://www.metroexpresscarwash.com/",
+    "image": "images/members/metroexpress.webp",
+    "membership": 1,
+    "description": "Full-service car wash"
+  },
+  {
+    "name": "Ultra Tech",
+    "address": "101 Tech Lane, Boise ID 83702",
+    "phone": "(208) 555-1234",
+    "website": "https://ultratech.example.com/",
+    "image": "images/members/ultratech.webp",
+    "membership": 2,
+    "description": "Software and hardware solutions"
+  }
+]

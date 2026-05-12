@@ -1,0 +1,174 @@
+:root {
+    --primary: #0A2463;
+    --secondary: #3E92CC;
+    --accent: #D8315B;
+    --light: #FFFAFF;
+    --dark: #1E1B18;
+    --heading: 'Montserrat', sans-serif;
+    --body: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body);
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+header span {
+    font-family: var(--heading);
+    font-size: 1.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navigation {
+    display: none;
+    background-color: var(--dark);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary);
+}
+
+.navigation a.active {
+    background-color: var(--accent);
+    font-weight: 700;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    font-family: var(--heading);
+    margin: 1rem 0;
+    color: var(--primary);
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+}
+
+/* Grid view */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* List view with zebra striping */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.list section:nth-child(even) {
+    background-color: #eef;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--secondary);
+}

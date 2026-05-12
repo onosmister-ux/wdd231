@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+    }
+    
+    .navigation a {
+        flex: 1 100%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
