@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abuja Chamber of Commerce</title>
+
+    <meta name="description" content="Abuja Chamber of Commerce supporting local businesses and economic growth.">
+
+    <meta name="author" content="Onos Adu">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abuja Chamber of Commerce">
+    <meta property="og:description" content="Official homepage of the Abuja Chamber of Commerce.">
+    <meta property="og:image" content="https://onosmister-ux.github.io/wdd231/chamber/images/og-image.jpeg">
+    <meta property="og:url" content="https://onosmister-ux.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.svg"
+         alt="Abuja Chamber of Commerce Logo"
+         width="50"
+         height="50">
+
+    <span>Abuja Chamber of Commerce</span>
+
+    <button id="menu"
+            type="button"
+            aria-label="Toggle Navigation Menu"></button>
+</header>
+
+<nav class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html" class="active">Chamber</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+    <a href="discover.html">Discover</a>
+</nav>
+
+<main>
+
+    <section class="hero">
+
+        <img src="images/hero.jpg"
+             alt="Abuja skyline"
+             width="1200"
+             height="600">
+
+        <a href="join.html" class="cta">
+            Join the Chamber
+        </a>
+
+    </section>
+
+    <section class="home-grid">
+
+        <section class="card">
+            <h2>Current Events</h2>
+
+            <p>
+                Abuja Annual Business Expo begins this July.
+                Join entrepreneurs, startups, and investors
+                from across Nigeria.
+            </p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <p>
+                Temperature:
+                <span id="current-temp"></span>
+            </p>
+
+            <p id="weather-desc"></p>
+
+            <div id="forecast"></div>
+        </section>
+
+        <section class="card">
+            <h2>Company Spotlights</h2>
+
+            <div id="spotlight-container"></div>
+        </section>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div>
+        <p><strong>Abuja Chamber of Commerce</strong></p>
+
+        <p>10 Central Business District</p>
+
+        <p>Abuja, Nigeria</p>
+
+        <p>info@abujachamber.ng</p>
+
+        <p>+234 800 000 0000</p>
+    </div>
+
+    <div>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Abuja Chamber of Commerce
+        </p>
+
+        <p>Onos Adu | WDD 231</p>
+
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>

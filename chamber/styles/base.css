@@ -172,3 +172,82 @@ footer {
 footer a {
     color: var(--secondary);
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: var(--accent);
+    color: white;
+
+    padding: 1rem 1.5rem;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.cta:hover {
+    background-color: var(--secondary);
+}
+
+/* HOME PAGE */
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: white;
+
+    padding: 1rem;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.weather p {
+    margin-bottom: .5rem;
+}
+
+/* SPOTLIGHTS */
+
+.spotlight-card {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: .5rem 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--primary);
+}
+

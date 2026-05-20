@@ -6,6 +6,10 @@
     .navigation {
         display: flex;
     }
+
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     .navigation a {
         flex: 1 100%;
