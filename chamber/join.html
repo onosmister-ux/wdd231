@@ -6,14 +6,13 @@
 
   <title>Join Chamber of Commerce</title>
 
-  <!-- REQUIRED META -->
-  <meta name="description" content="Join the Chamber of Commerce to grow your business, network, and access exclusive opportunities in the community.">
+  <meta name="description" content="Join the Chamber of Commerce to grow your business and access networking opportunities.">
   <meta name="author" content="Onos Adu">
 
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Join Chamber of Commerce">
-  <meta property="og:description" content="Apply to join the Chamber of Commerce and unlock networking, advertising, and business growth opportunities.">
-  <meta property="og:image" content="https://onosmister-ux.github.io/wdd231/images/chamber-preview.jpg">
+  <meta property="og:description" content="Apply to join the Chamber of Commerce and grow your business through networking and events.">
+  <meta property="og:image" content="images/chamber-preview.jpg">
   <meta property="og:url" content="https://onosmister-ux.github.io/wdd231/chamber/join.html">
 
   <!-- FAVICON -->
@@ -24,7 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- CSS (TWO FILES REQUIRED) -->
+  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/join.css">
 
   <!-- JS -->
@@ -34,74 +34,74 @@
 <body>
 
 <header>
-  <h1>Join Chamber of Commerce</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="join.html">Join</a>
+  </nav>
 </header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="join.html">Join</a>
-</nav>
 
 <main class="join-page">
 
-<section class="form-section">
+  <h1>Join Chamber of Commerce</h1>
 
-<h2>Membership Application</h2>
+  <section class="form-section">
 
-<form method="get" action="thankyou.html">
+    <h2>Membership Application</h2>
 
-  <label>
-    First Name
-    <input type="text" name="firstname" required autocomplete="given-name" title="Enter your first name">
-  </label>
+    <form method="get" action="thankyou.html">
 
-  <label>
-    Last Name
-    <input type="text" name="lastname" required autocomplete="family-name" title="Enter your last name">
-  </label>
+      <label>
+        First Name
+        <input type="text" name="firstname" required autocomplete="given-name" title="Enter your first name">
+      </label>
 
-  <label>
-    Organization Title
-    <input type="text" name="orgtitle" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" title="At least 7 letters required">
-  </label>
+      <label>
+        Last Name
+        <input type="text" name="lastname" required autocomplete="family-name" title="Enter your last name">
+      </label>
 
-  <label>
-    Email
-    <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter a valid email address">
-  </label>
+      <label>
+        Organization Title
+        <input type="text" name="orgtitle" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" title="At least 7 characters">
+      </label>
 
-  <label>
-    Phone
-    <input type="tel" name="phone" required autocomplete="tel" title="Enter your phone number">
-  </label>
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter valid email">
+      </label>
 
-  <label>
-    Business Name
-    <input type="text" name="business" required autocomplete="organization" title="Enter your business name">
-  </label>
+      <label>
+        Phone
+        <input type="tel" name="phone" required autocomplete="tel" title="Enter phone number">
+      </label>
 
-  <label>
-    Membership Level
-    <select name="membership">
-      <option value="np">NP Membership</option>
-      <option value="bronze">Bronze</option>
-      <option value="silver">Silver</option>
-      <option value="gold">Gold</option>
-    </select>
-  </label>
+      <label>
+        Business Name
+        <input type="text" name="business" required autocomplete="organization" title="Enter business name">
+      </label>
 
-  <label>
-    Organization Description
-    <textarea name="description" title="Describe your organization"></textarea>
-  </label>
+      <label>
+        Membership Level
+        <select name="membership">
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+      </label>
 
-  <input type="hidden" id="timestamp" name="timestamp">
+      <label>
+        Organization Description
+        <textarea name="description" title="Describe your organization"></textarea>
+      </label>
 
-  <button type="submit" class="submit-btn">Submit Application</button>
+      <input type="hidden" id="timestamp" name="timestamp">
 
-</form>
+      <button type="submit" class="submit-btn">Submit Application</button>
 
-</section>
+    </form>
+
+  </section>
 
 </main>
 
