@@ -3,71 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abuja Chamber of Commerce Directory - Onos Adu</title>
-    <meta name="description" content="Business directory for the Abuja Chamber of Commerce. Find local member businesses, services, and contact information.">
+    <title>Discover | Abuja Chamber of Commerce</title>
+    <meta name="description" content="Discover Abuja - attractions, demographics, and features for chamber members and visitors.">
     <meta name="author" content="Onos Adu">
-    
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
-    
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Abuja Chamber of Commerce Directory">
-    <meta property="og:description" content="Business directory for the Abuja Chamber of Commerce. Find local member businesses and services.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Discover Abuja - Chamber of Commerce">
+    <meta property="og:description" content="Explore key attractions and features of Abuja, Nigeria.">
     <meta property="og:image" content="https://onosmister-ux.github.io/wdd231/chamber/images/og-image.jpeg">
-    <meta property="og:url" content="https://onosmister-ux.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://onosmister-ux.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
+    <link rel="stylesheet" href="styles/discover.css">
+
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/logo.svg" alt="Abuja Chamber of Commerce Logo" width="50" height="50">
         <span>Abuja Chamber of Commerce</span>
-        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        <button id="menu" type="button" aria-label="Toggle Navigation Menu"></button>
     </header>
-    
+
     <nav class="navigation">
         <a href="../index.html">Home</a>
         <a href="index.html">Chamber</a>
-        <a href="directory.html" class="active">Directory</a>
+        <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
-        <a href="discover.html">Discover</a>
+        <a href="discover.html" class="active">Discover</a>
     </nav>
-    
+
     <main>
-        <h1>Business Directory</h1>
+        <h1>Discover Abuja</h1>
         
-        <div class="menu">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">📄 List</button>
-        </div>
-        
-        <article id="members" class="grid"></article>
+        <aside class="visit-message">
+            <p id="visitMessage"></p>
+        </aside>
+
+        <div id="cards" class="cards-container"></div>
     </main>
-    
+
     <footer>
-        <div class="contact">
+        <div>
             <p><strong>Abuja Chamber of Commerce</strong></p>
             <p>10 Central Business District</p>
             <p>Abuja, Nigeria</p>
             <p>info@abujachamber.ng</p>
             <p>+234 800 000 0000</p>
         </div>
-        <div class="dev-info">
-            <p>&copy;<span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <div>
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Abuja Chamber of Commerce
+            </p>
             <p>Onos Adu | WDD 231</p>
             <p id="lastModified"></p>
         </div>

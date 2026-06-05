@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Zuma Rock",
+    "address": "Along Abuja-Kaduna Expressway, Niger State",
+    "description": "A large natural monolith with a human face. Major landmark and tourist attraction near Abuja.",
+    "image": "images/zuma-rock.webp",
+    "link": "https://en.wikipedia.org/wiki/Zuma_Rock"
+  },
+  {
+    "name": "Abuja National Mosque",
+    "address": "Central Business District, Abuja",
+    "description": "National mosque of Nigeria built in 1984. Features gold dome and four minarets.",
+    "image": "images/national-mosque.webp",
+    "link": "#"
+  },
+  {
+    "name": "Nigerian National Christian Centre",
+    "address": "Central Area, Abuja",
+    "description": "Non-denominational Christian church completed in 2005. Major religious landmark.",
+    "image": "images/national-church.webp",
+    "link": "#"
+  },
+  {
+    "name": "Jabi Lake Mall",
+    "address": "Jabi District, Abuja",
+    "description": "Popular waterfront shopping mall with restaurants, cinema, and boat rides on Jabi Lake.",
+    "image": "images/jabi-lake.webp",
+    "link": "#"
+  },
+  {
+    "name": "Millennium Park",
+    "address": "Maitama District, Abuja",
+    "description": "Largest public park in Abuja designed by Manfredi Nicoletti. Great for picnics and events.",
+    "image": "images/millennium-park.webp",
+    "link": "#"
+  },
+  {
+    "name": "Aso Rock",
+    "address": "Three Arms Zone, Abuja",
+    "description": "400-meter monolith overlooking the Presidential Complex and National Assembly.",
+    "image": "images/aso-rock.webp",
+    "link": "#"
+  },
+  {
+    "name": "Wuse Market",
+    "address": "Wuse Zone 5, Abuja",
+    "description": "One of Abuja's largest markets. Sells food, clothing, electronics, and local crafts.",
+    "image": "images/wuse-market.webp",
+    "link": "#"
+  },
+  {
+    "name": "Arts and Crafts Village",
+    "address": "Central Business District, Abuja",
+    "description": "Open-air market for traditional Nigerian art, sculptures, paintings, and souvenirs.",
+    "image": "images/arts-crafts.webp",
+    "link": "#"
+  }
+]
