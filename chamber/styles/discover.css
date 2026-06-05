@@ -14,10 +14,6 @@
     display: grid;
     gap: 1.5rem;
     margin-top: 1rem;
-}
-
-/* Small screens: 320px - 640px - Single column */
-.cards-container {
     grid-template-areas: 
         "card1"
         "card2"
@@ -123,4 +119,8 @@
 
 .place-card button:hover {
     background-color: var(--secondary);
+}
+
+main h1 {
+    color: #1F6B3C;
 }
