@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Prices</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Food Prices</h1>
+    <button id="menu-button">☰</button>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prices.html" class="active">Prices</a></li>
+            <li><a href="submit.html">Submit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<<main class="page-container">
+
+    <h2>Available Foods</h2>
+
+    <!-- SEARCH BAR + BUTTON -->
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search food (rice, beans, yam...)"
+        />
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- FOOD CONTAINER -->
+    <div id="food-container"></div>
+
+</main>
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<script type="module" src="js/prices.js"></script>
+
+</body>
+</html>
